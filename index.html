@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provas e Kits de Estudo — por ano</title>
+<style>
+  :root{
+    --c3:#2e7d6b; --c3b:#e3f4f0;
+    --c5:#9c5fb0; --c5b:#f3e9f7;
+    --c7:#d9863a; --c7b:#fbeede;
+    --c9:#3a6fb0; --c9b:#e6eefb;
+    --ink:#2b2b33; --muted:#6b6b78; --line:#e7e7ee; --bg:#faf8f5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.45;}
+  .wrap{max-width:880px;margin:0 auto;padding:24px 16px 60px;}
+  header.top{text-align:center;padding:18px 12px 26px;}
+  header.top h1{font-size:1.7rem;margin:0 0 6px;}
+  header.top p{margin:0;color:var(--muted);font-size:.98rem;}
+  .nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 6px;}
+  .nav a{text-decoration:none;font-weight:600;font-size:.92rem;padding:7px 14px;border-radius:999px;color:#fff;}
+  .nav a.y3{background:var(--c3)} .nav a.y5{background:var(--c5)}
+  .nav a.y7{background:var(--c7)} .nav a.y9{background:var(--c9)}
+  section.year{margin-top:30px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;}
+  .yhead{padding:14px 18px;color:#fff;display:flex;align-items:center;gap:10px;}
+  .yhead h2{margin:0;font-size:1.22rem;}
+  .yhead .count{margin-left:auto;font-size:.82rem;opacity:.92;background:rgba(255,255,255,.22);padding:3px 10px;border-radius:999px;}
+  .y3 .yhead{background:var(--c3)} .y5 .yhead{background:var(--c5)}
+  .y7 .yhead{background:var(--c7)} .y9 .yhead{background:var(--c9)}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px;}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}}
+  a.card{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit;
+    border:1px solid var(--line);border-radius:13px;padding:13px 14px;background:#fff;transition:.15s;}
+  a.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08);}
+  .y3 a.card{background:var(--c3b)} .y5 a.card{background:var(--c5b)}
+  .y7 a.card{background:var(--c7b)} .y9 a.card{background:var(--c9b)}
+  .ico{font-size:1.5rem;line-height:1;flex:0 0 auto;}
+  .meta{flex:1;min-width:0;}
+  .subj{font-weight:700;font-size:1rem;margin:0 0 2px;}
+  .desc{margin:0;font-size:.85rem;color:var(--muted);}
+  .go{font-size:.82rem;font-weight:700;margin-top:6px;display:inline-block;}
+  .y3 .go{color:var(--c3)} .y5 .go{color:var(--c5)}
+  .y7 .go{color:var(--c7)} .y9 .go{color:var(--c9)}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:40px;}
+  .tag{display:inline-block;font-size:.7rem;font-weight:700;padding:2px 7px;border-radius:6px;
+    background:#fff3; border:1px solid rgba(0,0,0,.08);color:var(--muted);margin-left:6px;vertical-align:middle;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>📚 Provas e Kits de Estudo</h1>
+    <p>Feito à mão por uma mãe, para outras mães 💚 — organizado por ano</p>
+    <nav class="nav">
+      <a class="y3" href="#ano3">3º ano</a>
+      <a class="y5" href="#ano5">5º ano</a>
+      <a class="y7" href="#ano7">7º ano</a>
+      <a class="y9" href="#ano9">9º ano</a>
+    </nav>
+  </header>
+
+  <!-- ===== 3º ANO ===== -->
+  <section class="year y3" id="ano3">
+    <div class="yhead"><h2>🌱 3º ano</h2><span class="count">7 kits</span></div>
+    <div class="cards">
+      <a class="card" href="https://anaapcv-ui.github.io/Portugues-M1_3-ano/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português</p><p class="desc">Detetives das Palavras — substantivos, ortografia, sílabas</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/3ano-fundamental-portugues/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português <span class="tag">AV02</span></p><p class="desc">Diário, cartas, linguagem formal/informal, M ou N</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/matematica-3ano-10.06/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática</p><p class="desc">Expedição dos Números — milhar, gráficos, sequências</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/ciencias-3ano/index_pagina_inicial.html" target="_blank" rel="noopener">
+        <span class="ico">🔬</span><div class="meta"><p class="subj">Ciências</p><p class="desc">Animais — locomoção, alimentação, bicos e garras</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/Historia-M2_3-ano/" target="_blank" rel="noopener">
+        <span class="ico">🏛️</span><div class="meta"><p class="subj">História</p><p class="desc">Máquina do Tempo — engenhos, ouro, café, imigração</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/geografia-M2_3ano/" target="_blank" rel="noopener">
+        <span class="ico">🌎</span><div class="meta"><p class="subj">Geografia</p><p class="desc">Paisagens, município, cultura e diversidade</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/Ingl-s-_3ano_06.05/" target="_blank" rel="noopener">
+        <span class="ico">🌍</span><div class="meta"><p class="subj">Inglês</p><p class="desc">Animal World — animais, insetos, "This is / These are"</p><span class="go">Abrir →</span></div></a>
+    </div>
+  </section>
+
+  <!-- ===== 5º ANO ===== -->
+  <section class="year y5" id="ano5">
+    <div class="yhead"><h2>🌿 5º ano</h2><span class="count">6 kits</span></div>
+    <div class="cards">
+      <a class="card" href="https://anaapcv-ui.github.io/Portugues-M1_5-ano/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português</p><p class="desc">Esquadrão das Palavras — pronomes, HQ, "a" e "há"</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/portugues_adaptado-M1_-5ano/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português <span class="tag">adaptado</span></p><p class="desc">Revisão com o Bibo — calma, com áudio, uma ideia por tela</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/matematicaM1_5ano/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática</p><p class="desc">Frações e Números Decimais (AV1, 2º trimestre)</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/matematicaM1_5ano_revisao/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática <span class="tag">revisão</span></p><p class="desc">Revisão Tranquila — com a Tatá, sem pressa, com áudio</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/prova_historia-5-ano/" target="_blank" rel="noopener">
+        <span class="ico">🏛️</span><div class="meta"><p class="subj">História</p><p class="desc">Religiões Antigas — Mesopotâmia, Egito, Grécia, hebreus</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/prova-ingles_5ano/" target="_blank" rel="noopener">
+        <span class="ico">🌍</span><div class="meta"><p class="subj">Inglês</p><p class="desc">Unit 2 — adjetivos e comparativos, com áudio</p><span class="go">Abrir →</span></div></a>
+    </div>
+  </section>
+
+  <!-- ===== 7º ANO ===== -->
+  <section class="year y7" id="ano7">
+    <div class="yhead"><h2>🌳 7º ano</h2><span class="count">10 kits</span></div>
+    <div class="cards">
+      <a class="card" href="https://anaapcv-ui.github.io/Portugues-M1_7-ano/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português <span class="tag">M1</span></p><p class="desc">Detetive da Língua — oração, sujeito, /e/ e /i/</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/portuguesM3_05.05/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português <span class="tag">Caps 5 e 6</span></p><p class="desc">Frase, período, sujeito e predicado, hífen, mal/mau</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/matematica-M1_2trim_7ano/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática <span class="tag">Cap 5</span></p><p class="desc">Conversão de unidades — comprimento, área, tempo</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/kit7ano-matematica30.04/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática <span class="tag">Cap 4</span></p><p class="desc">Potenciação e radiciação</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/Prova-cienciasM1_7ano/" target="_blank" rel="noopener">
+        <span class="ico">🔬</span><div class="meta"><p class="subj">Ciências</p><p class="desc">Reino Plantae — briófitas, pteridófitas, angiospermas</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/KIT-HISTORIA-7-ANO/" target="_blank" rel="noopener">
+        <span class="ico">🏛️</span><div class="meta"><p class="subj">História</p><p class="desc">Idade Média (Caps. 3, 4, 5 e 6)</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/recupera-o-matem-tica-7-ano/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática <span class="tag">recuperação</span></p><p class="desc">Inteiros, operações, potenciação, somatório</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/recuperacao_historia_7ano/historia_recuperacao_index.html" target="_blank" rel="noopener">
+        <span class="ico">🏛️</span><div class="meta"><p class="subj">História <span class="tag">recuperação</span></p><p class="desc">Arquivo do Castelo — suserania, Islã, Justiniano</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/recupera-o_geografia-7ano/" target="_blank" rel="noopener">
+        <span class="ico">🌎</span><div class="meta"><p class="subj">Geografia <span class="tag">recuperação</span></p><p class="desc">Relevo, clima, vegetação e território</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/recupera-o_ingl-s7ano/" target="_blank" rel="noopener">
+        <span class="ico">🌍</span><div class="meta"><p class="subj">Inglês <span class="tag">recuperação</span></p><p class="desc">English Heroes — tenses, comparativos, WH-questions</p><span class="go">Abrir →</span></div></a>
+    </div>
+  </section>
+
+  <!-- ===== 9º ANO ===== -->
+  <section class="year y9" id="ano9">
+    <div class="yhead"><h2>🌟 9º ano</h2><span class="count">5 kits</span></div>
+    <div class="cards">
+      <a class="card" href="https://anaapcv-ui.github.io/Portugues-M1_9-ano/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português <span class="tag">M1</span></p><p class="desc">Jardim das Palavras — composição, formação, período</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/portugues_9ano_M3/" target="_blank" rel="noopener">
+        <span class="ico">📖</span><div class="meta"><p class="subj">Português <span class="tag">AV3</span></p><p class="desc">Ambiguidade, derivação, afixos (prefixos e sufixos)</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/matematica-M1_2trim_9ano/" target="_blank" rel="noopener">
+        <span class="ico">🔢</span><div class="meta"><p class="subj">Matemática</p><p class="desc">Equações do 2º grau, Bhaskara e sistemas</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/inglesM1_9ano/" target="_blank" rel="noopener">
+        <span class="ico">🌍</span><div class="meta"><p class="subj">Inglês</p><p class="desc">Grammar Lab — passive voice, future, vocabulary</p><span class="go">Abrir →</span></div></a>
+      <a class="card" href="https://anaapcv-ui.github.io/Prova-Quimica-BiologiaM12T_9ano/" target="_blank" rel="noopener">
+        <span class="ico">⚗️</span><div class="meta"><p class="subj">Ciências <span class="tag">Quím. + Bio.</span></p><p class="desc">Do Átomo à Vida — átomo, tabela periódica, mitose/meiose</p><span class="go">Abrir →</span></div></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>28 kits de estudo · organizados por ano 💚<br>Toque em qualquer card para abrir o material.</p>
+  </footer>
+
+</div>
+</body>
+</html>
